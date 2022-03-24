@@ -1,17 +1,14 @@
 $(document).ready(function() {
-  
-  $("h1").click(function() {
-    alert("This is a heading.");
-  });
+  const over21 = confirm("Are you over 21? Click OK for yes or Cancel for no.")
 
-  $("p").click(function() {
-    alert("This is a paragraph.");
-  });
-
-  $("img").click(function() {
-    alert("This is an image.");
-  });
+  if (age >= 21) {
+    $('#drinks').show();
+  } else if (age === 21) {
+    alert("Now don't go wild!");
+    $("drinks").show();
+  } else {
+    $("under-21").show();
+  }
 });
-
 
 
